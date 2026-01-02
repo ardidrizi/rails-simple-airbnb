@@ -1,0 +1,29 @@
+<div class="mb-4 d-flex justify-content-between align-items-start">
+  <div>
+    <h1><%= @flat.name %></h1>
+    <p class="text-muted"><i class="fa fa-map-marker-alt me-1"></i><%= @flat.address %></p>
+  </div>
+
+  <div>
+    <%= link_to 'Edit', edit_flat_path(@flat), class: 'btn btn-outline-secondary me-2' %>
+    <%= link_to 'Back', flats_path, class: 'btn btn-outline-primary' %>
+  </div>
+</div>
+
+<% if @flat.picture_url.present? %>
+  <div class="mb-4">
+    <%= image_tag @flat.picture_url, class: 'img-fluid rounded', alt: @flat.name %>
+  </div>
+<% end %>
+
+<div class="card mb-4">
+  <div class="card-body">
+    <h5 class="card-title">Description</h5>
+    <p class="card-text"><%= @flat.description %></p>
+
+    <hr>
+
+    <p><strong>Price per night:</strong> $<%= @flat.price_per_night %></p>
+    <p><strong>Number of guests:</strong> <%= @flat.number_of_guests %></p>
+  </div>
+</div>
