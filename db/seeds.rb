@@ -1,5 +1,4 @@
 # db/seeds.rb
-
 Flat.destroy_all
 
 Flat.create!(
@@ -8,7 +7,7 @@ Flat.create!(
   description: 'A lovely summer feel for this spacious garden flat. Two double bedrooms, open plan living area, large kitchen and a beautiful conservatory',
   price_per_night: 75,
   number_of_guests: 3,
-  picture_url: 'https://images.unsplash.com/photo-1560184897-6b5b8f0a6f8b'
+  picture_url: 'https://images.unsplash.com/photo-1560184897-6b5b8f0a6f8b?auto=format&fit=crop&w=1200&q=80'
 )
 
 Flat.create!(
@@ -17,7 +16,7 @@ Flat.create!(
   description: 'Bright, modern flat walking distance to museums and cafes. Open-plan kitchen and cosy queen bedroom.',
   price_per_night: 120,
   number_of_guests: 2,
-  picture_url: 'https://images.unsplash.com/photo-1505691723518-36a0a5b4a9c4'
+  picture_url: 'https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=1200&q=80'
 )
 
 Flat.create!(
@@ -26,7 +25,7 @@ Flat.create!(
   description: 'Small cottage perfect for weekend getaways. Fireplace, deck with lake views and private dock.',
   price_per_night: 90,
   number_of_guests: 4,
-  picture_url: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688'
+  picture_url: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1200&q=80'
 )
 
 Flat.create!(
@@ -35,7 +34,6 @@ Flat.create!(
   description: 'Large home with garden, three bedrooms, and family-friendly layout. Easy parking and shops nearby.',
   price_per_night: 150,
   number_of_guests: 6,
-  picture_url: 'https://images.unsplash.com/photo-1507089947368-19c1da9775ae'
+  picture_url: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1200&q=80'
 )
-
 puts "Seeded #{Flat.count} flats."
